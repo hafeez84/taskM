@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-const connectionUrl = 'mongodb://localhost:27017/task-manager-api'
 
-mongoose.connect(connectionUrl, {
+mongoose.connect('mongodb://127.0.0.1:27017/task-manager-api', {
     useNewUrlParser: true,
-    useCreateIndex: true
-} )
+    useCreateIndex: true,
+    useFindAndModify: false
+})
